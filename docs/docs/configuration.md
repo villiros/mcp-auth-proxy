@@ -48,8 +48,8 @@ Complete reference for all MCP Auth Proxy configuration options.
 
 | Option                   | Environment Variable   | Default | Description                                                                                                                      |
 | ------------------------ | ---------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| `--github-url`           | `GITHUB_URL`           | -       | GitHub custom instance URL                                       |
-| `--github-api-url`       | `GITHUB_API_URL`       | -       | GitHub custom API URL                                            |
+| `--github-url`           | `GITHUB_URL`           | -       | GitHub custom instance URL                                                                                                       |
+| `--github-api-url`       | `GITHUB_API_URL`       | -       | GitHub custom API URL                                                                                                            |
 | `--github-client-id`     | `GITHUB_CLIENT_ID`     | -       | GitHub OAuth client ID                                                                                                           |
 | `--github-client-secret` | `GITHUB_CLIENT_SECRET` | -       | GitHub OAuth client secret                                                                                                       |
 | `--github-allowed-users` | `GITHUB_ALLOWED_USERS` | -       | Comma-separated list of allowed GitHub users (usernames)                                                                         |
