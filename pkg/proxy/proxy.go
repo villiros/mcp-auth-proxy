@@ -86,6 +86,12 @@ func (p *ProxyRouter) handleProxy(c *gin.Context) {
 		return
 	}
 
+	if subject, _ := claims.GetSubject(); subject != "" {
+		c.Set("subject", subject)
+	} else {
+		c.Set("subject", "null")
+	}
+
 	if p.httpStreamingOnly && isSSEGetRequest(c.Request) {
 		c.AbortWithStatusJSON(http.StatusMethodNotAllowed, gin.H{"error": "SSE (GET) streaming is not supported by this backend; use POST-based HTTP streaming instead"})
 		return
